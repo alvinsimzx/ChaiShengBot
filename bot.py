@@ -41,7 +41,7 @@ async def nine_nine(ctx, user: discord.Member = None):
     if user!=None:
         await ctx.send(f"{user.mention } " + response)
     else:
-        await ctx.send(response)
+        await ctx.send(f"{author} "response)
     
 @bot.command(name='kongsi', help='Uploads face swapped image')
 async def imageUpload(ctx, user: discord.Member = None):
