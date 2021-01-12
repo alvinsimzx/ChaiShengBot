@@ -12,7 +12,11 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 bot = commands.Bot(command_prefix='$')
-await bot.change_presence(activity=discord.Game(name=" %wealth"))
+
+@bot.event
+async def on_ready():
+    await bot.change_presence(activity=discord.Game(name=" %wealth"))
+    print("bot ready")
 
 @bot.command(name='wealth', help='Check your wealth')
 async def nine_nine(ctx, user: discord.Member = None):
