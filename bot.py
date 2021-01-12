@@ -56,6 +56,18 @@ async def imageUpload(ctx, user: discord.Member = None):
     ImageCNY.paste(ImageUser, (290,70))
     ImageCNY.save("cny.jpg")
     file = discord.File(fp="cny.jpg")
-    await ctx.send("Happy CNY; lancau na lai",file=file)
+    cny_quotes = [
+        'Happy CNY; lancau na lai',
+        'Gong Xi Fa Cai; Gong hei fatt choi',
+        'Hepi cainis nu yer',
+        'Send me E-Angpao',
+        'BAK KWA CAK BISSS',
+        'Going to your house to eat all your bakwa',
+        'I give u orange, u give me angpao. EZ trade',
+        'I wear red to your house dun worry',
+        'Aunty & Uncle, pls dun harass me',
+    ]
+    cny_wish = random.choice(cny_quotes)
+    await ctx.send(cny_wish,file=file)
 
 bot.run(TOKEN)
