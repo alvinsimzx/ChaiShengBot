@@ -11,8 +11,8 @@ from PIL import Image
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-
 bot = commands.Bot(command_prefix='$')
+await bot.change_presence(activity=discord.Game(name=" %wealth"))
 
 @bot.command(name='wealth', help='Check your wealth')
 async def nine_nine(ctx, user: discord.Member = None):
