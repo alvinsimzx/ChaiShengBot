@@ -15,7 +15,7 @@ bot = commands.Bot(command_prefix='$')
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game(name=" %wealth"))
+    await bot.change_presence(activity=discord.Game(name=" $wealth"))
     print("bot ready")
 
 @bot.command(name='wealth', help='Check your wealth')
