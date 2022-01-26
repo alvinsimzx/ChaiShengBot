@@ -22,19 +22,17 @@ async def on_ready():
 async def nine_nine(ctx, user: discord.Member = None):
     wealth_quotes = [
         'Wah u this year got money oh',
-        'If you stop spending on Shopee maybe u can be rich bodo',
+        'If you stop spending on Shopee maybe u can be rich',
         'Got abit of money la',
-        'oi u think money drop from sky is it',
-        'stop spending money bodo',
+        'u think money drop from sky is it',
+        'stop spending money',
         'Hope ur angpao only got RM1 inside',
-        'Stop begging money from me bitch',
-        'Go buy bitcoin la bodo',
-        'I bet u cook rice in a pan bodo',
-        'Get a job u begger',
-        'can donate abit to you la this year',
-        'If you wear red this year, you look like a clown',
-        'Pls gimme angpao this year laoban',
-        'Laoban heng heng',
+        'Stop begging money from me',
+        'Go buy bitcoin',
+        'can donate abit la this year',
+        'If you wear red this year, you would look like a clown',
+        'Pls gimme angpao this year',
+        'You are gonna be super lucky',
     ]
 
     response = random.choice(wealth_quotes)
